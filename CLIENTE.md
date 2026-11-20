@@ -24,3 +24,6 @@ Poi: `NEXT_PUBLIC_SITE_MODE=production` e `npm run validate:prod` con 0 errori.
 - Sito: https://gsfglobal.github.io/cuomoedil-demo/
 - Branch `main` = sorgente, branch `gh-pages` = sito statico generato.
 - Aggiornare: `STATIC_EXPORT=1 NEXT_PUBLIC_BASE_PATH=/cuomoedil-demo NEXT_PUBLIC_SITE_URL=https://gsfglobal.github.io/cuomoedil-demo npm run build:pages`, poi pubblicare la cartella `out/` sul branch `gh-pages` (con file `.nojekyll`).
+
+## Foto (aggiornamento 20/11/2026)
+Inserite foto di repertorio da Pexels (vedi CREDITI-FOTO.md), etichettate "Foto di repertorio". Sezione prima/dopo disattivata finché non ci sono foto reali dello stesso lavoro.

@@ -7,6 +7,7 @@ import type { SiteConfigInput } from "./schema";
  *  https://maps.google.com/?cid=18404608706227842765
  *
  *  Stato: DEMO (anteprima da mostrare al titolare prima dell'acquisto).
+ *  Foto: di repertorio (Pexels, licenza gratuita) — NON sono lavori di CuomoEdil.
  *  Prima della produzione: foto autorizzate, testi confermati,
  *  P.IVA, policy, conferma che il cellulare è attivo su WhatsApp.
  * ============================================================
@@ -57,8 +58,8 @@ export const siteConfig = {
     subtitle: "Trasformiamo il modo di viverle.",
     description:
       "Appartamenti, condomini e facciate a Napoli: lavori eseguiti con materiali di qualità e un titolare che segue personalmente ogni cantiere.",
-    image: { src: "/images/demo/hero/hero.webp", alt: "Immagine dimostrativa: interno con archi e luce calda", demo: true },
-    imageMobile: { src: "/images/demo/hero/hero-mobile.webp", alt: "Immagine dimostrativa: interno con archi e luce calda", demo: true },
+    image: { src: "/images/foto/hero.webp", alt: "Foto di repertorio: open space ristrutturato con parquet e tagli di luce LED", demo: true },
+    imageMobile: { src: "/images/foto/hero-mobile.webp", alt: "Foto di repertorio: open space ristrutturato con parquet e tagli di luce LED", demo: true },
     video: "",
     ctaPrimary: "Richiedi un preventivo",
     ctaSecondary: "Scopri i nostri lavori",
@@ -71,7 +72,7 @@ export const siteConfig = {
       "Dall'appartamento da rinnovare alla facciata del condominio, ogni lavoro parte da un sopralluogo e da un preventivo chiaro.",
       "Il titolare, Davide Cuomo, segue direttamente i cantieri: un unico riferimento, dalla prima telefonata alla consegna.",
     ],
-    image: { src: "/images/demo/intro/intro.webp", alt: "Immagine dimostrativa: soggiorno luminoso con panca in pietra", demo: true },
+    image: { src: "/images/foto/intro.webp", alt: "Foto di repertorio: operaio al lavoro su una parete durante una ristrutturazione", demo: true },
   },
 
   about: {
@@ -81,7 +82,7 @@ export const siteConfig = {
       "CuomoEdil è l'impresa di Davide Cuomo, con sede in Via della Maiella a Napoli. Ci occupiamo di ristrutturazioni di appartamenti, lavori in condominio, facciate e impianti idrici.",
       "Chi ci ha scelto racconta di lavori eseguiti a regola d'arte, prezzi corretti e un titolare presente, che risolve i problemi con pragmatismo.",
     ],
-    image: { src: "/images/demo/about/about.webp", alt: "Immagine dimostrativa: sequenza di archi in un interno caldo", demo: true },
+    image: { src: "/images/foto/chi-siamo.webp", alt: "Foto di repertorio: rasatura di una parete in un cantiere interno", demo: true },
     values: [
       { title: "Il titolare in cantiere", text: "Davide Cuomo segue personalmente i lavori ed è il tuo riferimento diretto.", icon: "message" },
       { title: "Materiali di qualità", text: "Scegliamo materiali affidabili, pensati per durare nel tempo.", icon: "shield" },
@@ -103,15 +104,7 @@ export const siteConfig = {
   beforeAfter: {
     title: "Prima e dopo",
     intro: "Trascina il cursore per confrontare lo stato iniziale e il risultato finale.",
-    items: [
-      {
-        label: "Esempio dimostrativo",
-        before: { src: "/images/demo/before-after/prima.webp", alt: "Esempio dimostrativo: ambiente prima dell'intervento", demo: true },
-        after: { src: "/images/demo/before-after/dopo.webp", alt: "Esempio dimostrativo: ambiente dopo l'intervento", demo: true },
-        caption: "Illustrazione dimostrativa, non un lavoro di CuomoEdil. Nella versione definitiva: foto reali dello stesso intervento.",
-        demo: true,
-      },
-    ],
+    items: [],
   },
 
   reviewsSummary: {
@@ -148,7 +141,7 @@ export const siteConfig = {
 
   features: {
     testimonials: true,
-    beforeAfter: true,
+    beforeAfter: false, // da attivare con foto prima/dopo reali dello stesso lavoro
     threeD: false,
     quoteForm: true,
     floatingWhatsapp: true,

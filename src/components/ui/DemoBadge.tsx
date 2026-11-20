@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 /** Etichetta visibile sui contenuti dimostrativi (immagini e progetti di esempio). */
-export function DemoBadge({ className, label = "Immagine dimostrativa" }: { className?: string; label?: string }) {
+export function DemoBadge({ className, label = "Foto di repertorio" }: { className?: string; label?: string }) {
   return (
     <span
       className={cn(

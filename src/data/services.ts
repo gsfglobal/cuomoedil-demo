@@ -9,7 +9,7 @@ type ServiceInput = z.input<typeof serviceSchema>;
  * condominiali, controsoffitti con illuminazione LED).
  * contentReviewed: false → da confermare con Davide Cuomo prima della produzione.
  */
-const img = (file: string, alt: string) => ({ src: `/images/demo/services/${file}.webp`, alt: `Immagine dimostrativa: ${alt}`, demo: true });
+const img = (file: string, alt: string) => ({ src: `/images/foto/${file}.webp`, alt: `Foto di repertorio: ${alt}`, demo: true });
 
 export const services: ServiceInput[] = [
   {
@@ -22,8 +22,8 @@ export const services: ServiceInput[] = [
       "Ci occupiamo della ristrutturazione completa o parziale dell'appartamento: dalla demolizione delle vecchie finiture al rifacimento degli impianti, fino a pavimenti, rivestimenti e pitture.",
       "Il titolare segue direttamente il cantiere e coordina ogni lavorazione, così hai un solo riferimento per tutto il lavoro.",
     ],
-    image: img("ristrutturazioni-appartamenti", "soggiorno luminoso con panca"),
-    gallery: [img("ristrutturazioni-appartamenti-2", "dettaglio di un interno")],
+    image: img("appartamenti", "soggiorno ristrutturato"),
+    gallery: [img("appartamenti-2", "zona giorno con controsoffitto e luci")],
     benefits: [
       { title: "Un solo riferimento", text: "Parli direttamente con il titolare, dal sopralluogo alla consegna." },
       { title: "Materiali di qualità", text: "Materiali scelti per durare, con posa a regola d'arte." },
@@ -50,8 +50,8 @@ export const services: ServiceInput[] = [
       "Eseguiamo lavori sulle facciate e sulle parti comuni degli edifici: ripristino di intonaci e frontalini, tinteggiature esterne e interventi in quota.",
       "Lavoriamo con ponteggi e piattaforme aeree, organizzando il cantiere per ridurre i disagi ai condòmini.",
     ],
-    image: img("ristrutturazioni-complete", "edificio con archi e luce naturale"),
-    gallery: [img("ristrutturazioni-complete-2", "dettaglio architettonico")],
+    image: img("facciate", "ponteggio su un edificio in ristrutturazione"),
+    gallery: [img("facciate-2", "operai su ponteggio per il rifacimento di una facciata")],
     benefits: [
       { title: "Lavori in quota", text: "Ponteggi e piattaforme aeree per intervenire in sicurezza." },
       { title: "Rispetto del condominio", text: "Cantiere organizzato per limitare i disagi ai residenti." },
@@ -75,8 +75,8 @@ export const services: ServiceInput[] = [
       "Realizziamo e rifacciamo impianti idrici in appartamento e in condominio, comprese le colonne di distribuzione e le batterie di contatori.",
       "Lavoriamo in modo ordinato, con tubazioni identificabili e facili da ispezionare nel tempo.",
     ],
-    image: img("impianti-e-finiture-2", "dettaglio tecnico con linee e luce"),
-    gallery: [],
+    image: img("impianti", "installazione di tubazioni"),
+    gallery: [img("impianti-2", "raccordi di un impianto")],
     benefits: [
       { title: "Condominio e appartamento", text: "Dalle colonne comuni fino all'impianto di casa." },
       { title: "Lavoro ordinato", text: "Tubazioni organizzate e facili da ispezionare." },
@@ -100,8 +100,8 @@ export const services: ServiceInput[] = [
       "Realizziamo controsoffitti e pareti in cartongesso, anche con tagli di luce LED integrati, nicchie e velette.",
       "È il modo più rapido per rinnovare l'aspetto di un ambiente e nascondere impianti e tubazioni.",
     ],
-    image: img("impianti-e-finiture", "controsoffitto con linea di luce"),
-    gallery: [],
+    image: img("controsoffitti", "carteggiatura di un controsoffitto in cartongesso"),
+    gallery: [img("controsoffitti-2", "lavori su un soffitto in cartongesso")],
     benefits: [
       { title: "Luce integrata", text: "Tagli di luce LED progettati insieme al controsoffitto." },
       { title: "Impianti nascosti", text: "Cavi e tubazioni passano dentro il controsoffitto." },

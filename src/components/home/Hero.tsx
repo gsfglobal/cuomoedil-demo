@@ -29,6 +29,8 @@ export function Hero() {
         {h.video && <HeroVideo src={h.video} />}
       </div>
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-charcoal/85 via-charcoal/35 to-charcoal/30" aria-hidden />
+      {/* Leggibilità del testo anche con fotografie molto luminose */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-charcoal/65 via-charcoal/25 to-transparent" aria-hidden />
 
       <div className="container-x pt-40 pb-24 sm:pb-28 lg:pb-32">
         {h.eyebrow && (
